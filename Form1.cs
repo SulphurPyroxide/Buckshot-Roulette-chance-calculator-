@@ -9,7 +9,7 @@ namespace C_Test
         {
             InitializeComponent();
         }
-        public void ExampleFunc()
+        public void ExampleFunc() ///The main calculation
         {
             int Input1 = Int32.Parse(InputA.Text);
             int Input2 = Int32.Parse(InputB.Text);
@@ -22,7 +22,7 @@ namespace C_Test
         }
         private void button1_Click(object sender, EventArgs e) 
         {
-            
+            ///input validation
             if (Char.IsNumber(InputA.Text, 0) & Char.IsNumber(InputB.Text,0))
             {
                 ExampleFunc();
